@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "ES2023",
+		"lib": ["ES2023"],
+		"rootDir": "src",
+		"outDir": "dist",
+		"strict": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"isolatedModules": false,
+		"incremental": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"baseUrl": ".",
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"removeComments": true,
+		"paths": {
+			"@types": ["src/common/types/"],
+			"@entities/*": ["src/entities/*"],
+			"@exceptions/*": ["src/infrastructure/exceptions/*"],
+			"@config/*": ["src/infrastructure/config/*"],
+			"@common/*": ["src/common/*"],
+			"@modules/*": ["src/modules/*"]
+		}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
+}
